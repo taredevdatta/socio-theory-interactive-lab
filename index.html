@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A complete interactive learning lab for M.A. Sociology – Sociological Theory.">
+<title>Sociology Learning Lab | M.A. Sociology</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="hero"><div class="shell">
+ <div class="topline"><span class="eyebrow">M.A. SOCIOLOGY · INTERACTIVE LEARNING RESOURCE</span><span class="lang">ENGLISH VERSION</span></div>
+ <h1 data-i18n="title">Sociology Learning Lab</h1><p data-i18n="subtitle">Sociological Theory · Explore, analyse, apply and evaluate</p>
+ <div class="hero-pills"><span>4 Units</span><span>60 Lectures</span><span>HOTS-based</span><span>7 Thinker Simulations</span></div>
+ </div></header>
+<main class="shell">
+ <section class="dashboard">
+  <div><strong id="progressValue">0%</strong><span data-i18n="progress">Learning progress</span><div class="progress"><i id="progressFill"></i></div></div>
+  <div><strong id="exploredValue">0 / 60</strong><span data-i18n="explored">Sessions explored</span></div>
+  <div><strong id="quizValue">0</strong><span data-i18n="quizScore">Quiz points</span></div>
+ </section>
+ <nav class="nav" aria-label="Main navigation">
+  <button class="navbtn active" data-page="learn" data-i18n="navLearn">Learn</button>
+  <button class="navbtn" data-page="simulations" data-i18n="navSim">Thinker Simulations</button>
+  <button class="navbtn" data-page="caselab" data-i18n="navCase">Case Lab</button>
+  <button class="navbtn" data-page="quiz" data-i18n="navQuiz">Quizzes</button>
+  <button class="navbtn" data-page="assignments" data-i18n="navAssign">Assignments</button>
+  <button class="navbtn" data-page="outcomes" data-i18n="navOutcomes">Outcomes & Glossary</button>
+ </nav>
+ <section id="page-learn" class="page active">
+  <div class="section-intro"><div><div class="eyebrow">LEARNING PATH</div><h2 data-i18n="learnHeading">Explore the 60-lecture course</h2><p data-i18n="learnDesc">Select a unit, open a session and work through its objective and activity.</p></div></div>
+  <div id="unitTabs" class="unit-tabs"></div><div id="lectureList"></div>
+ </section>
+ <section id="page-simulations" class="page">
+  <div class="eyebrow">INTERACTIVE THEORY STUDIO</div><h2 data-i18n="simHeading">Think with the sociologists</h2><p class="muted" data-i18n="simDesc">Explore a theoretical lens, make a choice and reflect on the consequences.</p>
+  <div id="simulationTabs" class="unit-tabs"></div><div id="simulationContent"></div>
+ </section>
+ <section id="page-caselab" class="page">
+  <div class="eyebrow">APPLY · ANALYSE · EVALUATE · CREATE</div><h2 data-i18n="caseHeading">Sociology Case Lab</h2><p class="muted" data-i18n="caseDesc">Use concepts to interpret situations drawn from institutions and contemporary social life.</p>
+  <div id="caseTabs" class="unit-tabs"></div><div id="caseContent"></div>
+ </section>
+ <section id="page-quiz" class="page">
+  <div class="eyebrow">FORMATIVE ASSESSMENT</div><h2 data-i18n="quizHeading">Test your understanding</h2><p class="muted" data-i18n="quizDesc">Five questions per unit, with immediate explanatory feedback.</p>
+  <div id="quizTabs" class="unit-tabs"></div><div id="quizContent"></div>
+ </section>
+ <section id="page-assignments" class="page">
+  <div class="eyebrow">EXTENDED LEARNING</div><h2 data-i18n="assignHeading">Unit-wise assignments</h2><p class="muted" data-i18n="assignDesc">Use the suggested rubric to guide the quality of your academic work.</p><div id="assignmentContent"></div>
+ </section>
+ <section id="page-outcomes" class="page">
+  <div class="eyebrow">COURSE FRAMEWORK</div><h2 data-i18n="outcomeHeading">Course learning outcomes</h2><div id="outcomeContent"></div>
+  <h2 class="subhead" data-i18n="glossaryHeading">Key terms glossary</h2><input id="glossarySearch" class="search" placeholder="Search a term or definition"><div id="glossaryContent"></div>
+ </section>
+ <footer><p data-i18n="footer">A formative teaching-learning resource. Use with prescribed readings and the approved university syllabus.</p><p>Designed for M.A. Sociology · Sociological Theory</p></footer>
+</main><script src="data.js"></script><script src="app.js"></script></body></html>
